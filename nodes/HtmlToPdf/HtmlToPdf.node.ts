@@ -37,8 +37,8 @@ export class HtmlToPdf implements INodeType {
       }
 
       // Generar PDF con Puppeteer
-      const browser = await puppeteer.launch({
-        args: ['--no-sandbox', '--disable-setuid-sandbox'],
+      const browser = await puppeteer.connect({
+        browserWSEndpoint: 'ws://browserless:3000',
       });
       const page = await browser.newPage();
 

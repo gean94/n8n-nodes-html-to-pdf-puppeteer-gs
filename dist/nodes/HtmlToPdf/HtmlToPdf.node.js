@@ -29,8 +29,8 @@ class HtmlToPdf {
                 }
             }
             // Generar PDF con Puppeteer
-            const browser = await puppeteer_1.default.launch({
-                args: ['--no-sandbox', '--disable-setuid-sandbox'],
+            const browser = await puppeteer_1.default.connect({
+                browserWSEndpoint: 'ws://browserless:3000',
             });
             const page = await browser.newPage();
             // Fijar viewport decente para que los gradientes se vean bien
