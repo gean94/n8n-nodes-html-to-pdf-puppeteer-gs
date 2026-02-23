@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-html-to-pdf-puppeteer-gs",
-  "version": "0.3.0",
+  "version": "1.0.0",
   "description": "Convierte HTML a PDF usando Puppeteer",
   "keywords": [
     "n8n-community-node"
